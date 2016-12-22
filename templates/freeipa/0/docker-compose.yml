@@ -1,0 +1,8 @@
+---
+freeipa-server:
+  image: freeipa/freeipa-server
+  labels:
+    freeipa-server: 'true'
+  hostname: ${FREEIPA_HOSTNAME}
+  environment:
+    PASSWORD: ${FREEIPA_PASSWORD}

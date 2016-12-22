@@ -1,0 +1,20 @@
+---
+.catalog:
+  name: "freeipa-server"
+  version: "v0.0.1-0"
+  description: "FreeIPA Server"
+  uuid: freeipa-0
+  minimum_rancher_version: v1.0.0
+  questions:
+    - variable: "FREEIPA_PASSWORD"
+      label: "FREEIPA_PASSWORD"
+      description: "FREEIPA admin password"
+      type: "string"
+      default: "changeme"
+      required: true
+    - variable: "FREEIPA_HOSTNAME"
+      label: "FREEIPA_HOSTNAME"
+      description: "FreeIPA hostname (fqdn) ex: ipa.example.test"
+      type: "string"
+      default: "ipa.example.test"
+      required: true
